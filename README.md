@@ -1,5 +1,6 @@
 # EnglishHanZi
 A custom input method schema for writing and learning English with Chinese ideograms.
+Version 0.16
 
 # Overview
 
