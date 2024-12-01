@@ -1,0 +1,38 @@
+# Save this as english.schema.yaml
+---
+schema:
+  schema_id: english
+  name: English HanZi
+  version: "0.16"
+  author: Florin Cosma | EurasiaBaike
+  description: |
+    English words to Chinese characters
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyzăâîșț
+  delimiter: " '"
+  enable_completion: true
+  enable_correction: false
+
+translator:
+  dictionary: english
+  enable_user_dict: true
