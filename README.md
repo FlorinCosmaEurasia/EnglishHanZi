@@ -49,12 +49,6 @@ English Hanzi is a user-defined schema that enables users to type in English and
 
 
 
-git clone https://github.com/your-username/MyRimeSchema.git
-Copy the schema file(s) to your Rime configuration folder:
-
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
 Contact
 For questions or feedback, please open an issue on the GitHub Issues page or write to me on eurasianlink@yandex.com
 
